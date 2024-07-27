@@ -1,0 +1,45 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+        /*加载离线 jar包   短信验证*/
+       /* flatDir{
+            dirs 'libs'
+        }*/
+    }
+
+
+
+    dependencies {
+
+      /*  // 注册MobSDK
+        classpath "com.mob.sdk:MobSDK:2018.0319.1724"*/
+
+
+
+        classpath 'com.android.tools.build:gradle:3.0.0'
+//        classpath 'com.android.tools.build:gradle:3.4.0'
+        //短信验证  配置 grade
+        classpath 'com.mob.sdk:MobSDK:+'
+        
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        //图片选择器
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

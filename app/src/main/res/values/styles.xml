@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!--标题处的颜色-->
+       <!-- <item name="colorPrimary">@color/colorWhite</item>-->
+        <!--手机屏幕的   时间一行-->
+       <!-- <item name="colorPrimaryDark">@color/colorWhite</item>-->
+
+        <!--控制各个控件被选中时的颜色-->
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--页面背景色-->
+       <!-- <item name="android:windowBackground">@color/windowBackg</item>-->
+
+        <!--ToolBar上的Title颜色-->
+       <!-- <item name="android:textColorPrimary">@color/textColorPrimary</item>-->
+
+    </style>
+
+    <style name="main_menu_photo_anim">
+        <item name="android:windowEnterAnimation">@anim/photo_dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/photo_dialog_out_anim</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="30dp">
+
+        <TextView
+            android:id="@+id/textView86"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="验证手机号"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+    <requestFocus />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="44dp">
+
+        <EditText
+            android:id="@+id/find_input_code_et2"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/find_input_phone_et"
+            android:layout_alignLeft="@+id/find_input_phone_et"
+
+            android:hint="请输入验证码"
+            android:inputType="textPassword"></EditText>
+
+        <Button
+            android:id="@+id/find_request_code_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/login_input_code_et"
+            android:layout_alignRight="@+id/find_input_phone_et"
+            android:text="获取验证码" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/find_commit_btn2"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_input_code_et"
+        android:layout_alignLeft="@+id/login_input_code_et"
+        android:layout_gravity="center"
+        android:layout_marginTop="44dp"
+        android:text="下一步" />
+
+    <Button
+        android:id="@+id/btn_find_pass2_back"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="44dp"
+        android:text="上一步" />
+
+    <Button
+        android:id="@+id/btn_pass2_back_log"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="返回登录"
+        android:layout_gravity="center"
+        android:layout_marginTop="44dp"/>
+
+</LinearLayout>
